@@ -3,7 +3,7 @@ SRCS=$(wildcard *.c)
 OBJS=$(SRCS:.c=.o)
 HDRS=$(wildcard *.h)
 TARGET=sqlite-bench
-CC=/home/scui2/sgxlkl-original/sgx-lkl/build/host-musl/bin/musl-clang
+CC=gcc
 
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Darwin)
